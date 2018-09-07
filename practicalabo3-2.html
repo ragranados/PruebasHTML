@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+            grid-auto-rows: minman(100px, auto);
+        }
+
+        .wrapper>div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper>div:nth-child(odd) {
+            background-color: #ddd;
+        }
+
+        .nasted{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    </style>
+
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus tempora totam nostrum rem soluta
+            voluptatem harum hic dolores laborum! Qui possimus culpa ea quos? Quae autem facilis, libero quidem laboriosam
+            quam ratione adipisci ad magnam incidunt quos cumque amet!
+        </div>
+        <div class="nasted">
+            <div>loreem</div>
+            <div>loreem</div>
+            <div>loreem</div>
+        </div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+        <div>Lorem ipsum dolor sit amet.</div>
+    </div>
+
+</body>
+
+</html>
